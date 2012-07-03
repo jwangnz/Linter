@@ -22,34 +22,11 @@
                 }
                 break;
             case 'constant':
-                //if (! ArcanistXHPASTLintNamingHook::isUppercaseWithUnderscores($name)) {
-                    //return 'Follow naming conventions: '.$type.' should be named using ' .
-                        //'Uppercase_With_Underscores.';
-                //} else {
-                    //return null;
-                //}
-                //break;
             case 'function':
             case 'method':
-                //$name = ltrim($name, '_');
-                //if (! ArcanistXHPASTLintNamingHook::isLowerCamelCase($name)) {
-                    //return 'Follow naming conventions: '.$type.' should be named using ' .
-                        //'lowerCamelCase.';
-                //} else {
-                    //return null;
-                //}
-                //break;
             case 'parameter':
             case 'member':
             case 'variable':
-                //if (! ArcanistXHPASTLintNamingHook::isLowerCamelCase(
-                    //ArcanistXHPASTLintNamingHook::stripPHPVariable($name))) {
-                    //return 'Follow naming conventions: '.$type.' should be named using ' .
-                        //'lowerCamelCase.';
-                //} else {
-                    //return null;
-                //}
-                //break;
             default:
                 return $default;
         }
