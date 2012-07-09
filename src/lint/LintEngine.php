@@ -77,14 +77,6 @@ class LintEngine extends ArcanistLintEngine {
         $xhpast_linter = new ArcanistXHPASTLinter();
         $xhpast_linter->setCustomSeverityMap(
             array(
-                ArcanistXHPASTLinter::LINT_PHP_CLOSE_TAG
-                => ArcanistLintSeverity::SEVERITY_DISABLED,
-                //ArcanistXHPASTLinter::LINT_BRACE_FORMATTING
-                //=> ArcanistLintSeverity::SEVERITY_DISABLED,
-                //ArcanistXHPASTLinter::LINT_NAMING_CONVENTIONS
-                //=> ArcanistLintSeverity::SEVERITY_DISABLED,
-                //ArcanistXHPASTLinter::LINT_RAGGED_CLASSTREE_EDGE
-                //=> ArcanistLintSeverity::SEVERITY_DISABLED,
                 ArcanistXHPASTLinter::LINT_CLASS_FILENAME_MISMATCH
                 => ArcanistLintSeverity::SEVERITY_DISABLED,
             ));
